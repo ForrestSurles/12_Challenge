@@ -1,4 +1,4 @@
-# Module 12 Report Template
+# Credit Risk Analysis Report
 
 ## Overview of the Analysis
 
@@ -9,6 +9,14 @@ In this section, describe the analysis you completed for the machine learning mo
 * Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
 * Describe the stages of the machine learning process you went through as part of this analysis.
 * Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+
+The purpose of this analysis is to compare the capability of different supervised machine learning models, and determine whether, with such an inherently imbalanced dataset, a standard logistic regression model or an oversampled logistic regression model is more accurate in classifying a loan as *low-risk* or *high-risk*.
+
+
+
+
+
+
 
 ## Results
 
