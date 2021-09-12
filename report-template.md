@@ -4,13 +4,18 @@
 
 In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
+* ~~Explain the purpose of the analysis.~~
+
+The purpose of this analysis is to compare the capability of different supervised machine learning models, and determine whether, with such an inherently imbalanced dataset, a standard logistic regression model or an oversampled logistic regression model is more accurate in classifying the credit risk of a loan as *low-risk* or *high-risk*.
+
+* ~~Explain what financial information the data was on, and what you needed to predict.~~
+
+The dataset in question consists of common datapoints used to assess the creditworthiness of a borrower. The goal is to train a machine learning model to classify each loan in the dataset as a **high-risk loan** or a **low-risk loan** by utilizing and testing against existing classifications in the `loan_status` column of the dataset. 
+
 * Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
 * Describe the stages of the machine learning process you went through as part of this analysis.
 * Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
 
-The purpose of this analysis is to compare the capability of different supervised machine learning models, and determine whether, with such an inherently imbalanced dataset, a standard logistic regression model or an oversampled logistic regression model is more accurate in classifying a loan as *low-risk* or *high-risk*.
 
 
 
