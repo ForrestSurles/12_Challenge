@@ -20,15 +20,23 @@ For the unmodified model, `y.value_counts()` returns `75,036` *low-risk* loans a
 
 For the resampled model, `y_resampled.value_counts()` returns `56,271` *low-risk* loans and `56,271` *high-risk* loans. Unlike the first model, the second model before being fit to the data had the data ***oversampled*** in order to mitigate the problem previously illustrated for the unmodified model. When the data is oversampled, this means more instances for the *smaller* class (i.e. *high-risk* loans) are generated in order to balance out the training the second model will undergo when fit to the resampled data.
 
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+* ~~Describe the stages of the machine learning process you went through as part of this analysis.~~
+* ~~Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).~~
 
+The stages of the machine learning process are followed for both models: ***model/fit/predict/evaluate***.
+ 
+  1. **Model**: an appropriate model is chosen for the data and instantiated. 
+  
+  2. **Fit**: (aka the training stage) the model learns how to adjust itself to make predictions that match the data being fed to it. This is where the distinction between the unmodified and resampled data is paramount.
 
+  3. **Predict**: the model makes predictions for new data separate from the data it was fit to (or *trained on*)
 
-
-
-
-
+  4. **Evaluate**: review performance of the model and determine its effectiveness using standard metrics
+    - Example metrics include:
+      - Accuracy
+      - Precision
+      - Recall (or *sensitivity*)
+      - F1-Score
 
 ## Results
 
