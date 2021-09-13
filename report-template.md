@@ -45,19 +45,19 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 * <font color=OrangeRed>Machine Learning Model 1</font>: Straightforward logistic regression model fit to ***unmodified*** dataset
   * ~~Description of Model 1 Accuracy, Precision, and Recall scores.~~
 
-  - Accuracy: <font color=OrangeRed>95.20%</font>
+  - **Accuracy**: <font color=OrangeRed>95.20%</font>
 
     - The accuracy of the model measures ***how often*** the model was ***correct*** in its classification of high-risk loans
 
   $$accuracy = (TPs + TNs)\ ÷\ (TPs + TNs + FPs + FNs)$$
 
-  - Precision: <font color=OrangeRed>85%</font>
+  - **Precision**: <font color=OrangeRed>85%</font>
 
     - The precision of the model measures the ***level of confidence*** in the model's ability to ***correctly*** make positive predictions
 
   $$ precision = TPs\ ÷\ (TPs + FPs)$$
 
-  - Recall: <font color=OrangeRed>91%</font>
+  - **Recall**: <font color=OrangeRed>91%</font>
 
     - the recall of the model measures the number of ***actually high-risk*** loans the model ***correctly classified*** as high-risk
 
@@ -67,19 +67,19 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 * <font color=DeepSkyBlue>Machine Learning Model 2</font>: Logistic regression model fit to ***resampled*** dataset
   * ~~Description of Model 2 Accuracy, Precision, and Recall scores.~~
 
-  - Accuracy: <font color=DeepSkyBlue>99.37%</font>
+  - **Accuracy**: <font color=DeepSkyBlue>99.37%</font>
 
     - The accuracy of the model measures ***how often*** the model was ***correct*** in its classification of high-risk loans
 
   $$accuracy = (TPs + TNs)\ ÷\ (TPs + TNs + FPs + FNs)$$
 
-  - Precision: <font color=DeepSkyBlue>84%</font>
+  - **Precision**: <font color=DeepSkyBlue>84%</font>
 
     - The precision of the model measures the ***level of confidence*** in the model's ability to ***correctly*** make positive predictions
 
   $$ precision = TPs\ ÷\ (TPs + FPs)$$
 
-  - Recall: <font color=DeepSkyBlue>99%</font>
+  - **Recall**: <font color=DeepSkyBlue>99%</font>
 
     - the recall of the model measures the number of ***actually high-risk*** loans the model ***correctly classified*** as high-risk
 
@@ -88,7 +88,11 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 ## Summary
 
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+* ~~Which one seems to perform best? How do you know it performs best?~~
+* ~~Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )~~
 
-If you do not recommend any of the models, please justify your reasoning.
+Within the context of this credit risk analysis, it is more important to predict the `1`'s, *high-risk loans*, as opposed to the `0`'s, *low-risk loans*.
+
+Based upon the comparison of the classification report generated for each model's performance using the `classification_report_imbalanced` function, <font color=DeepSkyBlue>Machine Learning Model 2</font> outperforms <font color=OrangeRed>Machine Learning Model 1</font>. This is best illustrated by the **F1-Score** of each model representing the model's *harmonic mean* or a single summary statistic encompassing the model's precision as well as its recall. <font color=DeepSkyBlue>Machine Learning Model 2</font> outperforms <font color=OrangeRed>Machine Learning Model 1</font> by a mere 3% which while not a large difference is nevertheless mathematically superior.
+
+$$ F1\ =\ 2\ *\ (precision * recall)\ ÷\ (precision + recall) $$
