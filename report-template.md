@@ -42,13 +42,48 @@ The stages of the machine learning process are followed for both models: ***mode
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+* <font color=OrangeRed>Machine Learning Model 1</font>: Straightforward logistic regression model fit to ***unmodified*** dataset
+  * ~~Description of Model 1 Accuracy, Precision, and Recall scores.~~
+
+  - Accuracy: <font color=OrangeRed>95.20%</font>
+
+    - The accuracy of the model measures ***how often*** the model was ***correct*** in its classification of high-risk loans
+
+  $$accuracy = (TPs + TNs)\ ÷\ (TPs + TNs + FPs + FNs)$$
+
+  - Precision: <font color=OrangeRed>85%</font>
+
+    - The precision of the model measures the ***level of confidence*** in the model's ability to ***correctly*** make positive predictions
+
+  $$ precision = TPs\ ÷\ (TPs + FPs)$$
+
+  - Recall: <font color=OrangeRed>91%</font>
+
+    - the recall of the model measures the number of ***actually high-risk*** loans the model ***correctly classified*** as high-risk
+
+  $$ recall = TPs\ ÷\ (TPs + FNs) $$
 
 
+* <font color=DeepSkyBlue>Machine Learning Model 2</font>: Logistic regression model fit to ***resampled*** dataset
+  * ~~Description of Model 2 Accuracy, Precision, and Recall scores.~~
 
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+  - Accuracy: <font color=DeepSkyBlue>99.37%</font>
+
+    - The accuracy of the model measures ***how often*** the model was ***correct*** in its classification of high-risk loans
+
+  $$accuracy = (TPs + TNs)\ ÷\ (TPs + TNs + FPs + FNs)$$
+
+  - Precision: <font color=DeepSkyBlue>84%</font>
+
+    - The precision of the model measures the ***level of confidence*** in the model's ability to ***correctly*** make positive predictions
+
+  $$ precision = TPs\ ÷\ (TPs + FPs)$$
+
+  - Recall: <font color=DeepSkyBlue>99%</font>
+
+    - the recall of the model measures the number of ***actually high-risk*** loans the model ***correctly classified*** as high-risk
+
+  $$ recall = TPs\ ÷\ (TPs + FNs) $$
 
 ## Summary
 
